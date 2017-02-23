@@ -1,5 +1,6 @@
 node_modules/
 js/script.js
+js/scripts.js
 js/vendor.js
 js/libs/bootstrap.js
 css/
