@@ -28,7 +28,7 @@ module.exports = function (grunt) {
 			},
 			js: {
 				files: [ 'js/**/*.js', '!js/vendor.js', '!js/script.js', '!js/script.js' ],
-				tasks: [ 'browserify:script' ]
+				tasks: [ 'browserify:script', 'concat' ]
 			}
 		},
 		browserify: {
@@ -63,9 +63,6 @@ module.exports = function (grunt) {
 			}
 		},
 		concat: {
-			options: {
-				separator: ';',
-			},
 			main: {
 				src: ['js/vendor.js', 'js/script.js'],
 				dest: 'js/scripts.js'
@@ -76,7 +73,7 @@ module.exports = function (grunt) {
 		}
 	});
 
-	grunt.registerTask('compile', 	['sass', 'browserify', 'concat', 'clean:js'] );
+	grunt.registerTask('compile', 	['sass', 'browserify', 'concat'] );
 	grunt.registerTask('build', 	['compile', 'postcss', 'uglify'] );
 	grunt.registerTask('default', 	['compile', 'watch'] );
 }
