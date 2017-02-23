@@ -1,0 +1,10 @@
+<IfModule mod_headers.c>
+  <FilesMatch ".(js|css|xml|gz|html)$">
+    Header append Vary: Accept-Encoding
+  </FilesMatch>
+
+    RewriteEngine on
+	RewriteCond %{REQUEST_URI} !^/$
+	RewriteCond %{REQUEST_URI} !\.(gif|jpe?g|png|css|js|otf)$
+	RewriteRule .* / [L,R=302]
+</IfModule>
