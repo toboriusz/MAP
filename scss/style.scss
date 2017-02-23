@@ -1,8 +1,10 @@
 @import "globals/bootstrap";
 //Globals
+@import "globals/mixins";
 @import "globals/fonts";
 @import "globals/colors";
 @import "globals/style";
 
 //Sections
 @import "sections/menu";
+@import "sections/map";
