@@ -1,0 +1,15 @@
+$main-font: 'SofiaPro';
+
+@font-face {
+	font-family: $main-font;
+	src: url('../fonts/SofiaPro_Light.otf') format("opentype");
+	font-weight: normal;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: $main-font;
+	src: url('../fonts/SofiaPro_Bold.otf') format("opentype");
+	font-weight: bold;
+	font-style: normal;
+}

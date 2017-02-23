@@ -1,0 +1,31 @@
+{
+  "name": "MarysiaMAP",
+  "version": "1.0.0",
+  "description": "",
+  "author": "kuando.pl",
+  "license": "ISC",
+  "repository": {
+    "type": "git",
+    "url": "http://kuando.pl:997/Marysia.MAP"
+  },
+  "devDependencies": {
+    "autoprefixer": "^6.3.6",
+    "bootstrap-sass": "^3.3.6",
+    "cssnano": "^3.5.2",
+    "grunt": "^0.4.5",
+    "grunt-browserify": "^5.0.0",
+    "grunt-contrib-clean": "^1.0.0",
+    "grunt-contrib-concat": "^1.0.1",
+    "grunt-contrib-copy": "^0.8.0",
+    "grunt-contrib-uglify": "^0.9.1",
+    "grunt-contrib-watch": "^0.6.1",
+    "grunt-postcss": "^0.8.0",
+    "grunt-remove-logging": "^0.2.0",
+    "grunt-sass": "^1.1.0",
+    "jquery": "^2.2.3",
+    "lodash": "^3.10.0",
+    "matchdep": "^0.3.0",
+    "pixrem": "^3.0.2"
+  },
+  "dependencies": {}
+}
