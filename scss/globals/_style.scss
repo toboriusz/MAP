@@ -1,9 +1,13 @@
 body {
-	background-color: $light-grey;
+	background-color: $white;
 	font-family: $main-font;
 }
 
 .col-centered {
 	margin: 0 auto;
 	float: none;
+}
+
+section {
+	height: 100vh;
 }
