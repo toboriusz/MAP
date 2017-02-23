@@ -22174,13 +22174,6 @@ return jQuery;
 (function (global){
 global.$ = require('jquery');
 
-$('body').hide();
-var menu = require('./menu');
-menu();
 
 }).call(this,typeof global !== "undefined" ? global : typeof self !== "undefined" ? self : typeof window !== "undefined" ? window : {})
-},{"./menu":2,"jquery":"jquery"}],2:[function(require,module,exports){
-module.exports = function(){
-	//Some code
-}
-},{}]},{},[1]);
+},{"jquery":"jquery"}]},{},[1]);
