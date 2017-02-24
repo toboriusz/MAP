@@ -1,5 +1,13 @@
 #what-we-believe {
-	background-color: $blue;
-	background-image: url('../img/logo-white.svg') no-repeat;
+	background: url('../img/logo-white.svg') $blue no-repeat 100% 100%;
+	background-size: 422px 196px;
 	color: $white;
+	display: flex;
+	align-items: center;
+
+	.text {
+		text-transform: uppercase;
+		padding: 0 141px;
+		font-size: 6.167em;
+	}
 }

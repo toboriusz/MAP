@@ -1,0 +1,43 @@
+#contact {
+	color: $blue;
+	text-transform: uppercase;
+
+	.column {
+		height: 100vh;
+		display: inline-block;
+		float: left;
+
+		&.map {
+			width: 63.33%;
+			background: url('../img/map-bg.svg') no-repeat;
+			background-size: cover;
+		}
+
+		&.desc {
+			padding-left: 90px;
+			padding-top: 100px;
+			
+			h3 {
+				font-size: 2.643em;
+				font-weight: bold;
+			}
+
+			p {
+				font-size: 1.762em;
+				margin-bottom: 4em;
+
+				&:last-child {
+					margin-bottom: 0;
+				}
+
+				a {
+					color: $blue;
+
+					&:hover {
+						text-decoration: none;
+					}
+				}
+			}
+		}
+	}
+}

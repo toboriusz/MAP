@@ -1,0 +1,48 @@
+#we-worked-for {
+	background: url('../img/work-bg.svg') no-repeat 100% 100%;
+	color: $blue;
+	position: relative;
+
+	.column {
+		width: 50%;
+		height: 100vh;
+		display: inline-block;
+		float: left;
+
+		.wrapper {
+			height: 100%;
+			display: flex;
+			align-items: center;
+			justify-content: center;
+
+			.content {
+
+				.heading {
+					text-transform: uppercase;
+					font-size: 3.524em;
+					margin-bottom: 2.524em;
+				}
+
+				.logos-list {
+					list-style: none;
+					padding: 0;
+					margin: 0;
+
+					.item {
+						margin-bottom: 5em;
+						text-align: center;
+
+						&:last-child {
+							margin-bottom: 0;
+						}
+					}
+				}
+			}
+		}
+	}
+
+	.logo {
+		width: 470px;
+		height: 470px;
+	}
+}

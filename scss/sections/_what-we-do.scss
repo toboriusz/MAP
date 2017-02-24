@@ -1,0 +1,16 @@
+#what-we-do {
+	color: $blue;
+	display: flex;
+	align-items: center;
+	position: relative;
+
+	.mars {
+		position: absolute;
+		bottom: 0;
+		left: 73px;
+	}
+
+	.list-wrapper {
+		margin-left: 886px;
+	}
+}
