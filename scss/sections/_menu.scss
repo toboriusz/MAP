@@ -50,6 +50,13 @@
 						line-height: 130px;
 						color: $blue;
 						font-size: 1.475em;
+							
+						&,
+						&:visited, 
+						&:focus, 
+						&:active {
+							text-decoration: none;
+						}
 					}
 					&.active:before, &:hover:before{
 						content: '';
@@ -62,7 +69,7 @@
 
 					}
 					&:hover{
-						a {
+						a{
 							text-decoration: none;
 						}
 					}
