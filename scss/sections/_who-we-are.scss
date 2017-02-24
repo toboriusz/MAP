@@ -1,0 +1,18 @@
+#who-we-are {
+	background: url('../img/logo-blue.svg') no-repeat 0% 100%;
+	background-size: 454px 211px;
+	color: $blue;
+	display: flex;
+	align-items: center;
+	position: relative;
+
+	.venus {
+		position: absolute;
+		bottom: 0;
+		right: 135px;
+	}
+
+	.list-wrapper {
+		margin-left: 385px;
+	}
+}

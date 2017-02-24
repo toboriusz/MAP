@@ -10,4 +10,31 @@ body {
 
 section {
 	min-height: 100vh;
+	position: relative;
+
+	.scroll-down {
+		position: absolute;
+		bottom: 35px;
+		left: calc(50% - 21.5px);
+	}
+
+	.list-wrapper {
+		display: flex;
+		text-transform: uppercase;
+		font-size: 3.524em;
+
+		.label {
+			padding-right: 35px;
+		}
+
+		.list {
+			list-style: none;
+			margin: 0;
+			padding: 0;
+
+			.item {
+				font-weight: bold;
+			}
+		}
+	}
 }
