@@ -1,3 +1,13 @@
 nav {
-	
+	height: 100px;
+
+	ul {
+		text-align: center;
+		li {
+			a {
+				text-transform: uppercase;
+				color: $blue;
+			}
+		}
+	}
 }

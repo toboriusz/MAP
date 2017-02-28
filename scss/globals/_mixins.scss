@@ -34,7 +34,7 @@
 // }
 
 // Max breakpoint
-$max-breakpoint: 1025;
+$max-breakpoint: 1280;
 $wide-screen: "(min-width: #{$max-breakpoint}px)"; 
 
 @function get-vw($target) {
