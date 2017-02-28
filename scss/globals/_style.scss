@@ -21,7 +21,8 @@ section {
 	.list-wrapper {
 		display: flex;
 		text-transform: uppercase;
-		font-size: 3.524em;
+		font-size: 35px;
+		@include font-size-vw(35px);
 
 		.label {
 			padding-right: 35px;
