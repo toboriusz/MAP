@@ -5,6 +5,10 @@
 	color: $blue;
 	position: relative;
 
+	@media(max-width: $screen-xs-max){
+		background: transparent;
+	}
+
 	.column {
 		width: 50%;
 		height: 100vh;
