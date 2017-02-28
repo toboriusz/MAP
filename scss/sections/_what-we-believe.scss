@@ -9,5 +9,6 @@
 		text-transform: uppercase;
 		padding: 0 141px;
 		font-size: 6.167em;
+		@include font-size-vw(98px);
 	}
 }
