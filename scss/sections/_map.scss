@@ -1,7 +1,7 @@
 #map {
 	min-height: calc(100vh - 62px);
 	background:url('../img/venus-bg.png') no-repeat;
-	// @include image-2x("../img/venus-bg@2x.png", 1537, 879);
+	@include image-2x("../img/venus-bg@2x.png", 1537, 879);
 	background-position: 50% 50%;
 	display: flex;
 	align-items: center;
