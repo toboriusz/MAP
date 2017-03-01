@@ -1,5 +1,3 @@
-
-
 #we-worked-for {
 	background: url('../img/work-bg.svg') no-repeat 100% 100%;
 	color: $blue;
@@ -9,49 +7,52 @@
 		background: transparent;
 	}
 
-	.column {
-		width: 50%;
-		height: 100vh;
-		display: inline-block;
-		float: left;
+	.container-wrapper {
+		position: absolute;
+		height: 100%;
+		width: 100%;
 
 		.wrapper {
+			position: relative;
 			height: 100%;
-			display: flex;
-			align-items: center;
-			justify-content: center;
 
-			.content {
+			.logos-wrapper {
+				height: 100%;
+				display: flex;
+				align-items: center;
+				justify-content: center;
 
-				.heading {
-					text-transform: uppercase;
-					font-size: 3.524em;
-					margin-bottom: 2.524em;
-					@include margin-bottom-vw(40px);
-  					@include font-size-vw(56px);
-				}
+				.content {
+					text-align: center;
 
-				.logos-list {
-					list-style: none;
-					padding: 0;
-					margin: 0;
+					.heading {
+						font-size: 35px;
+						text-transform: uppercase;
+						margin-bottom: 65px;
+						@include margin-bottom-vw(65px);
+					}
 
-					.item {
-						margin-bottom: 5em;
-						@include margin-bottom-vw(80px);
-						text-align: center;
-
-						&:last-child {
-							margin-bottom: 0;
+					.logos-list {
+						.item {
+							margin-bottom: 65px;
+							@include margin-bottom-vw(65px);
 						}
 					}
+				}
+			}
+
+			.m-wrapper {
+				height: 100%;
+				display: flex;
+				align-items: center;
+				justify-content: center;
+
+				.logo {
+					width: 50%;
 				}
 			}
 		}
 	}
 
-	.logo {
-		width: 470px;
-		height: 470px;
-	}
+	
 }
