@@ -1,12 +1,62 @@
 #who-we-are {
 	background: url('../img/logo-blue.svg') no-repeat 0% 100%;
-	background-size: 454px 211px;
+	background-size: 279px 129px;
 	color: $blue;
-	display: flex;
-	align-items: center;
 	position: relative;
 
-	
+	@media(max-width: $screen-sm-max){
+		background: transparent;
+	}
 
+	position: relative;
 	
+	.container-wrapper {
+		position: absolute;
+		height: 100%;
+		width: 100%;
+
+		@media(max-width: $screen-xs-max){
+			position: static;
+		}
+
+		.wrapper {
+			position: relative;
+			height: 100%;
+
+			@media(max-width: $screen-xs-max){
+				position: static;
+			}
+
+			.text-wrapper {
+				height: 100%;
+				display: flex;
+				align-items: center;
+
+				@media(max-width: $screen-xs-max){
+					justify-content: center;
+				}
+			}
+
+			.image-wrapper {
+				height: 100%;
+				display: flex;
+				align-items: flex-end;
+
+				@media(max-width: $screen-xs-max){
+					display: block;
+					height: auto;
+				}
+				
+				img {
+					width: 80%;
+
+					@media(max-width: $screen-xs-max){
+						width: 40%;
+						height: auto;
+						margin: 0 auto;
+					}
+				}
+			}
+		}
+	}
 }
