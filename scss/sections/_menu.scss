@@ -42,6 +42,9 @@
 			width: 100%; 
 			height: 4px; 
 			background: $blue; 
+			@media(max-width: $screen-sm-max){
+				display: none;
+			} 
 		}
 	}
 }
