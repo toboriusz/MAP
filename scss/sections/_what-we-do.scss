@@ -1,9 +1,12 @@
 #what-we-do {
 	color: $white;
 	background: $blue;
-	display: flex;
-	align-items: center;
 	position: relative;
+
+	@media(max-width: $screen-xs-max) and (orientation:landscape){
+		display: flex;
+		align-items: center;
+	}
 
 	.container-wrapper {
 		position: absolute;
@@ -55,6 +58,10 @@
 						width: 60%;
 						height: auto;
 						margin: 0 auto;
+					}
+					
+					@media(max-width: $screen-xs-max) and (orientation:landscape){
+						display: none;
 					}
 				}
 			}

@@ -36,6 +36,11 @@ section {
 			@media(max-width: $screen-sm-max){
 				font-size: 23px;
 			}
+
+			@media(max-width: $screen-sm-max){
+				padding-right: 5px;
+				padding-top: 3px;
+			}
 		}
 
 		.list {
