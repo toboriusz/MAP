@@ -20,9 +20,6 @@
 
 			@media(max-width: $screen-xs-max){
 				position: static;
-				display: flex;
-				flex-flow: row;
-				flex-wrap: wrap;
 			}
 
 			.text-wrapper {
@@ -32,7 +29,7 @@
 
 				@media(max-width: $screen-xs-max){
 					justify-content: center;
-					order: 1;
+					
 					width: 100%;
 				}
 			}
@@ -45,7 +42,9 @@
 				@media(max-width: $screen-xs-max){
 					display: block;
 					height: auto;
-					order: 2;
+					width: 100%;
+					position: absolute;
+					bottom: 0;
 					width: 100%;
 				}
 				

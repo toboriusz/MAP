@@ -43,6 +43,9 @@
 				@media(max-width: $screen-xs-max){
 					display: block;
 					height: auto;
+					position: absolute;
+					bottom: 0;
+					width: 100%;
 				}
 				
 				img {
