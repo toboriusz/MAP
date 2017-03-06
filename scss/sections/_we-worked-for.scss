@@ -36,6 +36,10 @@
 						.item {
 							margin-bottom: 65px;
 							@include margin-bottom-vw(65px);
+
+							@media(max-width: $screen-xs-max) and (orientation:landscape){
+								margin-bottom: 5px;
+							}
 						}
 					}
 				}

@@ -72,7 +72,12 @@
 						margin-bottom: 50px;
 
 						@media(max-width: $screen-sm-max){
-							margin-bottom: 25px;
+							margin-bottom: 0px;
+							margin-top: 15px;
+						}
+
+						@media(max-width: $screen-xs-max) and (orientation:landscape){
+							display: none;
 						}
 					}
 				}
