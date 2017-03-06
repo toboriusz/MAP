@@ -53,7 +53,7 @@ module.exports = function (grunt) {
 			        require('cssnano')
 			    ]
 			},
-			build: { expand: true, src: 'css/*.css', dest: '/' }
+			build: { expand: true, src: 'css/*.css', dest: './' }
 		},
 		uglify: {
 			build: {
