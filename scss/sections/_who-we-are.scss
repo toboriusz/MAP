@@ -1,8 +1,15 @@
 #who-we-are {
-	background: url('../img/logo-blue.svg') no-repeat 0% 100%;
+	background: url('../img/logo-blue.svg') no-repeat;
+	background-position: 0% calc(100% + 128px);
 	background-size: 279px 129px;
 	color: $blue;
 	position: relative;
+
+	transition: background 500ms ease-in-out;
+
+	&.logo-up{
+		background-position: 0% 100%;
+	}
 
 	@media(max-width: $screen-sm-max){
 		background: transparent;

@@ -5,3 +5,6 @@ scroll();
 
 var menu = require('./menu');
 menu();
+
+var logoUp = require('./logo-up')
+logoUp();

@@ -1,9 +1,15 @@
 #what-we-believe {
-	background: url('../img/logo-white.svg') $blue no-repeat 100% 100%;
+	background: url('../img/logo-white.svg') $blue no-repeat;
+	background-position:  100% calc(100% + 128px);
 	background-size: 243px 112px;
 	color: $white;
 	display: flex;
 	align-items: center;
+	transition: background 500ms ease-in-out;
+
+	&.logo-up{
+		background-position: 100% 100%;
+	}
 
 	@media(max-width: $screen-xs-max){
 		background: $blue;
