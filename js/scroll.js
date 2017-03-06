@@ -30,7 +30,7 @@ module.exports = function(){
 
     var sectionsIds = [];
 
-    $('#menu-header-menu li').each(function(){
+    $('#navigation li').each(function(){
       var $el = $(this);
       sectionsIds.push({
         id: $el.find('a').attr('href'),
@@ -53,6 +53,7 @@ module.exports = function(){
       $.each(sizes, function(i, el){
         if(el.top <= scroll && el.bottom > scroll){
           el.item.addClass('active');
+
           if(window.location.hash !== el.id){
             history.replaceState(null, null, el.id);
           }
