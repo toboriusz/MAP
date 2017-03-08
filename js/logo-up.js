@@ -1,11 +1,11 @@
 module.exports = function(){
 	var sectionsIds = [];
 
-    $('section[animate-logo]').each(function(){
+    $('section').each(function(){
       var $el = $(this);
       sectionsIds.push({
         id: $el,
-        item: $($el)
+        item: $($el).find('.animated-logo')
       });
     });
 
@@ -23,9 +23,9 @@ module.exports = function(){
       var scroll = window.scrollY + 20;
       $.each(sizes, function(i, el){
         if(el.top <= scroll && el.bottom > scroll){
-          el.item.addClass('logo-up');
+          el.item.addClass('up');
         }else{
-          el.item.removeClass('logo-up');
+          el.item.removeClass('up');
         }
       });
     }
