@@ -1,3 +1,18 @@
+@keyframes logoAnim{
+	0%{
+		background-position: 50% 00%;
+	}
+	49.9999999%{
+		background-position: 50% 00%;
+	}
+	50%{
+		background-position: 50% 100%;
+	}
+	100%{
+		background-position: 50% 100%;
+	}
+}
+
 #map {
 	min-height: calc(100vh - 62px);
 	background:url('../img/venus-bg.jpg') no-repeat;
@@ -9,6 +24,12 @@
 	background-size: contain;
 
 	.logo {
-		width: 25%;
+		width: 25vw;
+		height: 25vw;
+		background-image: url('../img/map_logo_anim.png');
+		background-repeat: no-repeat;
+		background-position: 50% 0%;
+		background-size: 100% auto;
+		animation: logoAnim 200ms linear infinite;
 	}
 }
