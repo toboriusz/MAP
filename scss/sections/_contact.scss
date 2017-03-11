@@ -67,8 +67,7 @@
 
 					img.contact-logo {
 						height: 128px;
-						width: 299px;
-						width: auto;
+						width: 100%;
 						margin-bottom: 50px;
 
 						@media(max-width: $screen-sm-max){
