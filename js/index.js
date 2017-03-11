@@ -1,5 +1,8 @@
 global.$ = require('jquery');
 
+var logoAnim = require('./logoAnim');
+logoAnim();
+
 var scroll = require('./scroll');
 scroll();
 
