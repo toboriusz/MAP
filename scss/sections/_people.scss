@@ -1,0 +1,83 @@
+#people {
+	color: $white;
+	background: $blue;
+	position: relative;
+	display: flex;
+	align-items: center;
+
+	.people {
+
+		@media(max-width: $screen-sm-max){
+			padding: 40px 0;
+		}
+
+		.people-item {
+			text-transform: uppercase;
+			padding: 0 15px;
+			display: inline-block;
+
+			&:last-child {
+				margin: 0;
+			}
+
+			@media(max-width: $screen-sm-max){
+				&:nth-child(4), &:nth-child(5) {
+					float: none;
+					margin-top: 40px;
+				}
+			}
+
+			@media(max-width: $screen-xs-max){
+				margin-bottom: 40px;
+
+				&:last-child {
+					margin-bottom: 0;
+				}
+			}
+
+			.photo {
+				width: 100%;
+				height: auto;
+
+				@media(max-width: $screen-xs-max){
+					width: 50%;
+					display: block;
+					float: none;
+					margin: 0 auto;
+				}
+			}
+
+			.name {
+				text-align: center;
+				font-weight: bold;
+				font-size: 20px;
+				@include font-size-vw(20px);
+
+				@media(max-width: $screen-sm-max){
+					font-size: 20px;
+				}
+			}
+
+			.position {
+				text-align: center;
+				font-weight: normal;
+				font-size: 20px;
+				@include font-size-vw(20px);
+
+				@media(max-width: $screen-sm-max){
+					font-size: 20px;
+				}
+			}
+
+			.desc {
+				font-size: 14px;
+				@include font-size-vw(14px);
+				text-align: left;
+
+				@media(max-width: $screen-sm-max){
+					font-size: 14px;
+				}
+			}
+		}
+	}
+}
