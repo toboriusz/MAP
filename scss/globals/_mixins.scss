@@ -62,3 +62,17 @@ $wide-screen: "(min-width: #{$max-breakpoint}px)";
     margin-bottom: $size;
   }
 }
+
+@mixin padding-top-vw($size) {
+  padding-top: get-vw($size);
+  @media #{$wide-screen} {
+    margin-bottom: $size;
+  }
+}
+
+@mixin border-width-vw($size) {
+  border-width: get-vw($size);
+  @media #{$wide-screen} {
+    margin-bottom: $size;
+  }
+}
