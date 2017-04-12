@@ -14,19 +14,34 @@
 
 			p {
 				margin: 0;
-				margin-bottom: 15px;
-				@include margin-bottom-vw(15px);
+				margin-bottom: 0px;
+				@include margin-bottom-vw(0px);
+
+				&:last-child{
+					margin-bottom: 0;
+				}
+
+				@media(max-width: $screen-xs-max){
+					margin-bottom: 8px;
+				}
 
 				span {
 					background: $blue;
 					color: $white;
 					text-transform: uppercase;
-					font-size: 60px;
-					@include font-size-vw(60px);
+					font-size: 68px;
+					@include font-size-vw(68px);
 					padding-left: 8.3333333333%;
 					padding-right: 20px;
-					padding-top: 15px;
-					padding-bottom: 3px;
+					padding-top: 10px;
+					padding-bottom: 0px;
+
+					@media(max-width: $screen-xs-max){
+						text-align: center;
+						padding: 0;
+						display: block;
+						padding-top: 5px;
+					}
 				}
 			}
 		}
@@ -37,6 +52,13 @@
 			position: relative;
 			margin: 0 auto;
 			float: none;
+			margin-top: 60px;
+			@include margin-top-vw(60px);
+
+			@media(max-width: $screen-xs-max){
+				width: 50vw;
+				height: 25vw;
+			}
 
 			img{
 				width: 100%;

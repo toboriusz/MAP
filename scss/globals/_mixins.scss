@@ -34,7 +34,7 @@
 // }
 
 // Max breakpoint
-$max-breakpoint: 1280;
+$max-breakpoint: 1510;
 $wide-screen: "(min-width: #{$max-breakpoint}px)"; 
 
 @function get-vw($target) {
@@ -51,6 +51,13 @@ $wide-screen: "(min-width: #{$max-breakpoint}px)";
 
 @mixin margin-bottom-vw($size) {
   margin-bottom: get-vw($size);
+  @media #{$wide-screen} {
+    margin-bottom: $size;
+  }
+}
+
+@mixin margin-top-vw($size) {
+  margin-top: get-vw($size);
   @media #{$wide-screen} {
     margin-bottom: $size;
   }
