@@ -1,13 +1,25 @@
 #who-we-are {
 	color: $blue;
 	position: relative;
-	background:url('../img/bg-2.png') no-repeat;
-	background-position: 50% 50%;
 	display: flex;
 	align-items: center;
 	justify-content: flex-start;
-	background-size: cover;
-
+	position: relative;
+	z-index: 1;
+	
+	&:before{
+		content: '';
+		position: absolute;
+		top: 0;
+		left: 0;
+		width: calc(50% - 22px);
+		height: 100%;
+		background-image: url('../img/bg-2.png');
+		background-size: cover;
+		background-position: right;
+		background-repeat: no-repeat;
+		z-index: 2;
+	}
 
 	@media(max-width: $screen-xs-max) and (orientation:landscape){
 		display: flex;
@@ -15,59 +27,19 @@
 	}
 	
 	.container-wrapper {
-		position: absolute;
-		height: 100%;
-		width: 100%;
 
-		@media(max-width: $screen-xs-max){
-			position: static;
+		.label{
+			text-align: right;
+			margin: 0;
+			background-color: $blue;
+			color: $white;
+			text-transform: uppercase;
+			width: 100%;
 		}
 
 		.wrapper {
-			position: relative;
-			height: 100%;
 
-			@media(max-width: $screen-xs-max){
-				position: static;
-			}
-
-			.text-wrapper {
-				height: 100%;
-				display: flex;
-				align-items: center;
-
-				@media(max-width: $screen-xs-max){
-					justify-content: center;
-				}
-			}
-
-			.image-wrapper {
-				height: 100%;
-				display: flex;
-				align-items: flex-end;
-
-				@media(max-width: $screen-xs-max){
-					display: block;
-					height: auto;
-					position: absolute;
-					bottom: 0;
-					width: 100%;
-				}
-				
-				img {
-					width: 80%;
-
-					@media(max-width: $screen-xs-max){
-						width: 40%;
-						height: auto;
-						margin: 0 auto;
-					}
-
-					@media(max-width: $screen-xs-max) and (orientation:landscape){
-						display: none;
-					}
-				}
-			}
+			
 		}
 	}
 
