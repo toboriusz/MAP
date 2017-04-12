@@ -6,8 +6,19 @@
 
 	.text {
 		text-transform: uppercase;
-		font-size: 60px;
-		@include font-size-vw(60px);
+		font-size: 36px;
+		@include font-size-vw(36px);
+
+		@media(max-width: $screen-xs-max){
+			font-size: 15px;
+		}
+
+		&:nth-child(2) {
+			margin-bottom: 40px;
+			margin-top: 40px;
+			@include margin-bottom-vw(40px);
+			@include margin-top-vw(40px);
+		}
 	}
 
 	.animated-logo{
