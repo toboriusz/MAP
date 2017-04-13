@@ -2,6 +2,7 @@
 	background: url('../img/work-bg.svg') no-repeat 100% 100%;
 	color: $blue;
 	position: relative;
+	min-height: 100vh;
 
 	@media(max-width: $screen-xs-max){
 		background: transparent;
@@ -22,6 +23,10 @@
 				align-items: center;
 				justify-content: center;
 
+				@media(max-width: $screen-xs-max) {
+					width: 100%;
+				}
+
 				.content {
 					text-align: center;
 
@@ -33,6 +38,8 @@
 					}
 
 					.logos-list {
+						height: 50vh;
+						overflow-y: scroll;
 						.item {
 							margin-bottom: 65px;
 							@include margin-bottom-vw(65px);
