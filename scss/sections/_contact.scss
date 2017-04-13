@@ -65,10 +65,18 @@
 					h3 {
 						font-weight: bold;
 						font-size: 26px;
+
+						@media(max-width: $screen-xs-max){
+							font-size: 20px;
+						}
 					}
 
 					p {
 						font-size: 20px;
+
+						@media(max-width: $screen-xs-max){
+							font-size: 15px;
+						}
 
 						&:last-child {
 							margin-bottom: 0;
@@ -86,6 +94,10 @@
 					img.contact-logo {
 						height: 128px;
 						margin-bottom: 50px;
+
+						@media(max-width: $screen-xs-max){
+							height: 80px;
+						}
 
 						@media(max-width: $screen-sm-max){
 							margin-bottom: 0px;

@@ -11,7 +11,7 @@
 		font-weight: bold;
 
 		@media(max-width: $screen-xs-max){
-			font-size: 25px;
+			font-size: 20px;
 		}
 
 		p {
@@ -28,7 +28,7 @@
 		padding-left: 0;
 
 		@media(max-width: $screen-xs-max){
-			padding-left: 15px;
+			padding-left: 0px;
 		}
 
 		.label {
@@ -45,8 +45,11 @@
 			@include padding-top-vw(5px);
 
 			@media(max-width: $screen-xs-max){
-				font-size: 25px;
-
+				font-size: 20px;
+				margin-bottom: 30px;
+				display: inline-block;
+				width: auto;
+				padding-left: 40px;
 			}
 		}
 	}

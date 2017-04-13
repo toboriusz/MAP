@@ -36,7 +36,7 @@
 				@include padding-bottom-vw(7px);
 
 				@media(max-width: $screen-xs-max){
-					font-size: 25px;
+					font-size: 20px;
 
 				}
 			}
@@ -50,7 +50,7 @@
 			margin: 0;
 
 			@media(max-width: $screen-xs-max){
-				font-size: 25px;
+				font-size: 20px;
 			}
 
 			li {
@@ -69,6 +69,11 @@
 					@include height-vw(20px);
 					top: 15px;
 					@include top-vw(15px);
+
+					@media(max-width: $screen-xs-max){
+						height: 7px;
+						top: 7px;
+					}
 				}
 			}
 		}

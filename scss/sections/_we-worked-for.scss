@@ -32,9 +32,14 @@
 
 					.heading {
 						font-size: 35px;
+						@include font-size-vw(35px);
 						text-transform: uppercase;
 						margin-bottom: 65px;
 						@include margin-bottom-vw(65px);
+
+						@media(max-width: $screen-xs-max) {
+							font-size: 25px;
+						}
 					}
 
 					.logos-list {
