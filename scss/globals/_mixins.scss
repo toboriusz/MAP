@@ -59,27 +59,48 @@ $wide-screen: "(min-width: #{$max-breakpoint}px)";
 @mixin margin-top-vw($size) {
   margin-top: get-vw($size);
   @media #{$wide-screen} {
-    margin-bottom: $size;
+    margin-top: $size;
   }
 }
 
 @mixin padding-top-vw($size) {
   padding-top: get-vw($size);
   @media #{$wide-screen} {
-    margin-bottom: $size;
+    margin-top: $size;
   }
 }
 
 @mixin padding-right-vw($size) {
   padding-right: get-vw($size);
   @media #{$wide-screen} {
-    margin-bottom: $size;
+    padding-right: $size;
+  }
+}
+
+@mixin padding-bottom-vw($size) {
+  padding-bottom: get-vw($size);
+  @media #{$wide-screen} {
+    padding-bottom: $size;
   }
 }
 
 @mixin border-width-vw($size) {
   border-width: get-vw($size);
   @media #{$wide-screen} {
-    margin-bottom: $size;
+    border-width: $size;
+  }
+}
+
+@mixin height-vw($size) {
+  height: get-vw($size);
+  @media #{$wide-screen} {
+    height: $size;
+  }
+}
+
+@mixin top-vw($size) {
+  top: get-vw($size);
+  @media #{$wide-screen} {
+    top: $size;
   }
 }
