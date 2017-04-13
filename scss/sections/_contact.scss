@@ -2,6 +2,14 @@
 	color: $blue;
 	text-transform: uppercase;
 	position: relative;
+	background: url('../img/map-bg.svg') no-repeat;
+	background-size: cover;
+	height: 100%;
+	background-position: 0% 100%;
+
+	@media(max-width: $screen-sm-max){
+		background: $white;
+	}
 	
 	.container-wrapper {
 		position: absolute;
@@ -11,21 +19,31 @@
 		.map-wrapper {
 			position: relative;
 			height: 100%;
+			display: flex;
+			align-items: center;
+
+			@media(max-width: $screen-sm-max){
+				display: block;
+			}
 
 			.map {
-				background: url('../img/map-bg.svg') no-repeat;
-				background-size: cover;
-				height: 100%;
-				background-position: 0% 100%;
 
 				@media(max-width: $screen-sm-max){
 					height: 30%;
+					background: url('../img/map-bg.svg') no-repeat;
+					background-size: cover;
+					background-position: 0% 100%;
 				}
 			}
 
 			.desc {
-				padding-top: 150px;
-				padding-left: 50px;
+				background: $white;
+				padding-top: 40px;
+				@include padding-top-vw(40px);
+				padding-bottom: 30px;
+				@include padding-bottom-vw(30px);
+				padding-left: 90px;
+				@include padding-left-vw(90px);
 
 				@media(max-width: $screen-sm-max){
 					padding-top: 70px;
@@ -50,7 +68,7 @@
 					}
 
 					p {
-						font-size: 17.3px;
+						font-size: 20px;
 
 						&:last-child {
 							margin-bottom: 0;
