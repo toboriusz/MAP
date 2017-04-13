@@ -5,6 +5,37 @@
 	display: flex;
 	align-items: center;
 
+	&:before {
+		content: "";
+		background: $white;
+		height: 22px;
+		@include height-vw(22px);
+		width: 100%;
+		display: block;
+		position: absolute;
+		top: 320px;
+		@include top-vw(320px);
+
+		@media(max-width: $screen-sm-max){
+			display: none;
+		}
+	}
+
+	&:after {
+		content: "";
+		background: $white;
+		height: 22px;
+		@include height-vw(22px);
+		width: 100%;
+		display: block;
+		position: absolute;
+		bottom: 50px;
+
+		@media(max-width: $screen-sm-max){
+			display: none;
+		}
+	}
+
 	.people {
 
 		@media(max-width: $screen-sm-max){
