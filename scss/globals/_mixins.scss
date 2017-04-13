@@ -70,6 +70,13 @@ $wide-screen: "(min-width: #{$max-breakpoint}px)";
   }
 }
 
+@mixin padding-right-vw($size) {
+  padding-right: get-vw($size);
+  @media #{$wide-screen} {
+    margin-bottom: $size;
+  }
+}
+
 @mixin border-width-vw($size) {
   border-width: get-vw($size);
   @media #{$wide-screen} {

@@ -1,0 +1,53 @@
+#what-we-do {
+	color: $white;
+	display: flex;
+	align-items: center;
+	background-color: $blue;
+
+	.text {
+		text-transform: uppercase;
+		font-size: 42px;
+		@include font-size-vw(42px);
+		font-weight: bold;
+
+		@media(max-width: $screen-xs-max){
+			font-size: 25px;
+		}
+
+		p {
+			margin-bottom: 46px;
+			@include margin-bottom-vw(46px);
+
+			&:last-child {
+				margin-bottom: 0;
+			}
+		}
+	}
+
+	.label-container {
+		padding-left: 0;
+
+		@media(max-width: $screen-xs-max){
+			padding-left: 15px;
+		}
+
+		.label {
+			margin: 0;
+			background: $white;
+			color: $blue;
+			text-transform: uppercase;
+			text-align: right;
+			font-size: 42px;
+			@include font-size-vw(42px);
+			padding-right: 40px;
+			@include padding-right-vw(40px);
+			padding-top: 5px;
+			@include padding-top-vw(5px);
+
+			@media(max-width: $screen-xs-max){
+				font-size: 25px;
+
+			}
+		}
+	}
+}
