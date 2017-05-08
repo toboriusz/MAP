@@ -1,7 +1,7 @@
 .nav-wrap {
-	height: 62px;
+	height: 120px;
 	display: flex;
-	align-items: flex-end;
+	align-items: center;
 
 	#navigation {
 		margin: 0 auto;
@@ -14,7 +14,7 @@
 
 			a {
 				color: $blue;
-				font-size: 15px;
+				font-size: 23px;
 				display: block;
 				float: left;
 				padding: 6px 10px 4px;
