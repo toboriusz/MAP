@@ -1,5 +1,6 @@
 #map {
-	min-height: calc(100vh - 62px);
+	height: calc(100vh - 62px);
+	min-height: 600px;
 	background:url('../img/bg-1.png') no-repeat;
 	background-position: 50% 50%;
 	display: flex;
@@ -39,8 +40,7 @@
 			position: relative;
 			margin: 0 auto;
 			float: none;
-			margin-top: 60px;
-			@include margin-top-vw(60px);
+			margin: 12vh auto;
 
 			&.logo-mobile {
 				display: none;
@@ -59,7 +59,7 @@
 			@media(max-width: $screen-xs-max){
 				width: 50vw;
 				height: 25vw;
-				margin-top: 15vw;
+				
 			}
 
 			img{
