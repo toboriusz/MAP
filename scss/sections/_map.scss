@@ -15,36 +15,20 @@
 		width: 100%;
 
 		.intro {
-
+			overflow: hidden;
 			p {
-				margin: 0;
-				margin-bottom: 0px;
-				@include margin-bottom-vw(0px);
-
-				&:last-child{
-					margin-bottom: 0;
-				}
+				margin: 0.35vw 0;
+				float: left;
+				clear: both;
+				background-color: $blue;
+				color: $white;
+				text-transform: uppercase;
+				font-size: 65px;
+				@include font-size-vw(60px);
+				padding: 5px 20px 5px 7vw;
 
 				@media(max-width: $screen-xs-max){
-					margin-bottom: 6px;
-				}
-
-				span {
-					background: $blue;
-					color: $white;
-					text-transform: uppercase;
-					font-size: 65px;
-					@include font-size-vw(65px);
-					padding-left: 8.3333333333%;
-					padding-right: 20px;
-					padding-top: 10px;
-					padding-bottom: 0px;
-
-					@media(max-width: $screen-xs-max){
-						text-align: center;
-						display: inline-block;
-						padding: 5px 10px 0 15px;
-					}
+					padding: 3px 10px 3px 3.5vw;
 				}
 			}
 		}
