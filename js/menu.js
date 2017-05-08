@@ -27,5 +27,21 @@ module.exports = function(){
 				width: $magicLine.data("origWidth")
 			});    
 		});
+		
+
+		$(document).click(function(event) {
+			if (!$(event.target).closest(".menu-collapse").length) {
+				$('#navigation, .menu-collapse').removeClass('open');
+			}
+		});
+
+		$('.menu-collapse, #navigation a').click(function(){
+			$('#navigation, .menu-collapse').toggleClass('open');
+		});
+
+		$(window).resize(function(){
+			$('#navigation, .menu-collapse').removeClass('open');
+		});
+
 	});
 }
