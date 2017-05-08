@@ -3,8 +3,7 @@
 	color: $blue;
 	position: relative;
 	min-height: 100vh;
-
-	@media(max-width: $screen-xs-max){
+	@media(max-width: $screen-xs-max) {
 		background: transparent;
 	}
 
@@ -22,7 +21,6 @@
 				display: flex;
 				align-items: center;
 				justify-content: center;
-
 				@media(max-width: $screen-xs-max) {
 					width: 100%;
 				}
@@ -32,25 +30,45 @@
 
 					.heading {
 						font-size: 35px;
+						margin-top: 0;
 						@include font-size-vw(35px);
 						text-transform: uppercase;
 						margin-bottom: 65px;
 						@include margin-bottom-vw(65px);
-
 						@media(max-width: $screen-xs-max) {
-							font-size: 25px;
+							font-size: 20px;
 						}
 					}
 
 					.logos-list {
 						height: 50vh;
 						overflow-y: scroll;
+						@media(max-width: $screen-xs-max) {
+							height: auto;
+							overflow-y: auto;
+						}
+
 						.item {
 							margin-bottom: 65px;
 							@include margin-bottom-vw(65px);
-
-							@media(max-width: $screen-xs-max) and (orientation:landscape){
+							@media(max-width: $screen-xs-max) and (orientation:landscape) {
 								margin-bottom: 5px;
+							}
+							@media(max-width: $screen-xs-max) {
+								width: 50%;
+								min-height: 70px;
+								float: left;
+								display: flex;
+								align-items: center;
+								padding: 0 15px;
+							}
+
+							img {
+								margin: 0 auto;
+
+								@media(max-width: $screen-xs-max) {
+									max-height: 70px;
+								}
 							}
 						}
 					}
@@ -69,6 +87,4 @@
 			}
 		}
 	}
-
-	
 }

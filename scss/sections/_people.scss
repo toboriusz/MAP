@@ -71,7 +71,7 @@
 				height: auto;
 
 				@media(max-width: $screen-xs-max){
-					width: 50%;
+					width: 45%;
 					display: block;
 					float: none;
 					margin: 0 auto;
@@ -85,7 +85,7 @@
 				@include font-size-vw(20px);
 
 				@media(max-width: $screen-sm-max){
-					font-size: 20px;
+					font-size: 18px;
 				}
 			}
 
@@ -96,7 +96,7 @@
 				@include font-size-vw(20px);
 
 				@media(max-width: $screen-sm-max){
-					font-size: 20px;
+					font-size: 16px;
 				}
 			}
 
@@ -106,7 +106,7 @@
 				text-align: left;
 
 				@media(max-width: $screen-sm-max){
-					font-size: 14px;
+					font-size: 13px;
 					text-align: center;
 				}
 			}
